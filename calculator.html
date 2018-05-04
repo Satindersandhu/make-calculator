@@ -9,7 +9,9 @@ First: <input type="text" id="myText">
 Second: <input type="text" id="myText2">
 <p id="demo"></p>
 
-<button onclick="fun()">click</button>
+<button onclick="fun()">click to add</button><br>
+<button onclick="funm()">click to multiply</button><br>
+
 
 <script>
 
@@ -18,6 +20,13 @@ function fun(){
  var z = Number(document.getElementById("myText2").value);
  document.getElementById("demo").innerHTML = x+z;
 }
+
+function funm(){
+ var x = Number(document.getElementById("myText").value);
+ var z = Number(document.getElementById("myText2").value);
+ document.getElementById("demo").innerHTML = x*z;
+}
+
 </script>
 </body>
 </html>
