@@ -5,12 +5,19 @@
 <body>
 <h2>From master branch</h2>
 <p>Add two items</p>
-<input id="first" type="text">
-<br>
-<input id="second" type="text">
+First: <input type="text" id="myText">
+Second: <input type="text" id="myText2">
+<p id="demo"></p>
+
 <button onclick="fun()">click</button>
+
 <script>
 
+function fun(){
+ var x = Number(document.getElementById("myText").value);
+ var z = Number(document.getElementById("myText2").value);
+ document.getElementById("demo").innerHTML = x+z;
+}
 </script>
 </body>
 </html>
